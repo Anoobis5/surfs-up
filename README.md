@@ -28,3 +28,14 @@ The data that we gathered shows us that:
   1. The Average temperature difference between June and December is about 4 degrees, with June's Average being 74.9 (75) degrees, and December's Average being 71 degrees. This shows us that there is very little fluctuation between the average temperature at these two times of the year. 
   2. The maximum temperature difference between June and December also has a minimal difference of 2 degrees with June's maximum temperature being 85 and Decembers maximum being 83.
   3. The greatest variance in temperature is shown in the minimum temperatures between the two months. The minimum temperature in June is 64, and the minimum temperature in December is 56, showing that the low temperature level in December may not be ideal for having an ice cream & surfing shop open. 
+
+
+## Summary of Findings
+(rewrite)
+Overall the weather in December and June are historically very similar, although December has a wider range of results, with its high being close to June's but its low well below June's.
+
+Additional queries that could be run include: Precipation difference between June and December to determine is one has more rainy weather, as well as a comaparison by weather station, as we may see higher/lower temperatures and precipitation levels at different locations. We would be primarily interested in the weather station closest to our prospective location, which would narrow the results and provide the best data for us to consider.
+
+[ 
+
+
