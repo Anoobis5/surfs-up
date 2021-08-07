@@ -2,17 +2,20 @@
 
 ## Project Overview
 
-Before opening a surf shop in Hawaii, the client wants to gather more information regarding temperature trends. The client specifically wants to analyze temperature data for the months of June and December in Oahu. By analyzing weather data during these months, we will have a better idea at how to create a sustainable business model year-round for our surf and ice cream shop. 
+Before opening an Ice Cream & Surf sop in Hawaii, the client wants to gather more information regarding temperature trends. The client specifically wants to analyze temperature data for the months of June and December in Oahu. By analyzing weather data during these months, we will have a better idea at how to create a sustainable business model year-round for our surf and ice cream shop. 
 
 ## Results
 
+We ran analyses to examine the temperature statistics in both the months June and December.
+
+#
 Please see the table below for the summary of June's temperature statistics:
 
 ![June_Temp_Dataframe](https://user-images.githubusercontent.com/84881187/128449652-64007bdc-7510-43fe-8f16-e6bd7e8ac94b.PNG)
 
 Looking at this table, Oahu had a mean temperature of 74.9, a min/low 64.0 and a max/high 85.0. We had a total of 1700 counts of data.
 
-
+#
 
 
 Please see below for the summary of December's temperature statistrics:
@@ -21,46 +24,49 @@ Please see below for the summary of December's temperature statistrics:
 
 
 Looking at this table, in December, Oahu had a mean of 71.0, with a min/low of 56.0, and a max/high of 83.0. We had a total of 1517 counts of data. 
-
+#
 
 The data that we gathered shows us that:
 
   1. The Average temperature difference between June and December is about 4 degrees, with June's Average being 74.9 (75) degrees, and December's Average being 71 degrees. This shows us that there is very little fluctuation between the average temperature at these two times of the year. 
   2. The maximum temperature difference between June and December also has a minimal difference of 2 degrees with June's maximum temperature being 85 and Decembers maximum being 83.
-  3. The greatest variance in temperature is shown in the minimum temperatures between the two months. The minimum temperature in June is 64, and the minimum temperature in December is 56, showing that the low temperature level in December may not be ideal for having an ice cream & surfing shop open. 
+  3. The greatest variance in temperature is shown in the minimum temperatures between the two months. The minimum temperature in June is 64, and the minimum temperature in December is 56. 
+
+Please see the table below for table comparison:
+![June_Dec_Summary_Table](https://user-images.githubusercontent.com/84881187/128603394-f5c5744b-1c50-4dd7-88cb-fc49e350ac29.PNG)
 
 
 ## Summary of Findings
-(rewrite)
 
-By comparing the statistic summary of the two months, we can conclude that temperature patterns remain steady throughout the whole year. However, there are two more queries that we need to include to get a better understanding of the weather on Oahu. Although temperatures may remain about the same throughout the year, precipitation may not and would also have a significant impact of the business's sustainability. Doing a statistically summary of the precipitation patterns during the months of June and December will give us a better picture of the overall weather pattern.
+Our client wants to open an Ice Cream & Surf shop in Oahu, Hawaii. We were tasked with analyzing the weather trends in the months of June and December to help gauge how sustainable is it to open the shop. By analyzing our summary statistics of the two months, we can observe that the temperature patterns tend to stay relatively steady throughout the year. When we look at the frequency of temperatures recorded in June they appear to have a more regular bell curve distribution. Please see below for a visual of June's temperature data:
 
-Another query that can be created to help us further our analysis is comparing the most active stations to the weather patterns. This can help us narrow down the best location by giving us the most popular station combined with the most stable weather patterns.
-Overall the weather in December and June are historically very similar, although December has a wider range of results, with its high being close to June's but its low well below June's.
-
-Additional queries that could be run include: Precipation difference between June and December to determine is one has more rainy weather, as well as a comaparison by weather station, as we may see higher/lower temperatures and precipitation levels at different locations. We would be primarily interested in the weather station closest to our prospective location, which would narrow the results and provide the best data for us to consider.
+![JUne_Temp_Visual](https://user-images.githubusercontent.com/84881187/128604008-ca3ae32c-72ff-44fa-8fd9-852f8772bc0c.PNG)
 
 
-The lack of data in December, 2017 may cause less reliable of data. The database should generate more recently winter data to compare summer and winter precipitation.
+In comparison, if we look at December's data, the temperatures seem to be much more variable than those in June given its larger range in recorded temperatures (given the variane between the max vs min temp of each month). Please see below for a visualization of December's temperature data:
 
-In addition of statistical summery, various features and plots may help us better analyze the seasonal weather. For example, line plots would be able to provide quick and easy way to show time-varying. Histogram plots would tell us frequency of precipitation as well as temperature for both December and Jane.
-
-For seasonal analysis, we need filter more detail precipitation and temperatures for Spring and Autumn.
-
-
-I would summize that even though temperatures recorded in December seem to vary more than those of June, December would still provide appropriate weather conditions for both surfing and demand in ice cream. The average temperatures in June and December only differ by 4 degrees, and looking at the December histogram, I feel more confident in this decision--December's median temperature, with the highest frequency recorded across a span of years, is about 72 degrees, at least double the frequency of the next highest recorded temperatures, 75 and 67 respectively. It would be ill advised to not open the surf and ice cream shop based on at first clance temperature minimums.
-
-Before making a final deicision though, I would want to perform some additional queries to get more color on weather conditions in these two months.
-
-1. For specificity, I would like to delve into the summary statistics of temperatures recorded by station for each month. This can help determine geopgraphically where in Oahu to build the prospective shop. By comparing the variances in temperatures and the frequencies recorded, we can narrow in on an optimal location.
-Stations vs Temps for June and December Starting Point
-
-[INSERT CODE AND PICTRURE OF DATA]
-
-2 Secondly, I would like to review other important variables that are correlated with optimal beach and surfing weather. Sunch varibles include precipitation, wave swells and wind condition. Though there may be some contrasting optimal conditions based on surfing vs sunbathing, it is important to identify those conditions and see how they correlate to foot traffic to the beach (depending on the time of year). It would be foolish to only value temperatures as the key indicator for opening a business.
-About
-Advanced Data Storage and Retrieval with `Jupyter Notebook`, `SQLite` and `SQLAlchemy`
+![Dec_Temp_Visual](https://user-images.githubusercontent.com/84881187/128604046-f9ee2dde-6715-45b5-8020-d30de440950a.PNG)
 
 
 
+However, there is quite a bit more data we could collect to help give us a better picture of how sustaiable the months of June and December are for opening the Ice Cream & Surf shop in Oahu. Although temperatures may be relatively predictable throughout the year, precipitation at different times of the year could have a significant impact of the sustainability of the business. By generating a statistical summary of the precipitation during the months of June and December, we can get more information of how the weather will affect the business at different times of year. Please see below for our table and code for displaying the Precipitation Summaries for June and December merged into a readable table:
 
+![Prcp_Summary_Code](https://user-images.githubusercontent.com/84881187/128604533-470262e7-99eb-4c95-81dd-128e108aff1d.PNG)
+
+
+A brief look at our data shows that the average precipitation in Oahu is on average 0.08 higher in December than in June, an almost neglible difference. However, the Max rainfall in December is higher by 2. With the lower temps and potentially higher precipitation that could affect business revenue, we have yet another factor that could affect the business' sustainability in December. It would be most beneficial if we also collected data comparing the Temperature Data and Precipitation data to see if there is a correlation between the average precipitation occurences and the high-low temperature ranges during each month. This will help us determine whether high temperatures still equate to good business sustainability for the business. We historgram plot comaring the Weather Temperature with the occurences of Precipitation would be beneficial data.
+
+#
+
+Another query that can help strength our analysis is to compare the most active stations to the weather patterns. This can help us examine the best prospective location to open by comparing the variances in temperatures and frequency at each station. Please see below for a table summary of Station Temperature Data and a snip-it of our Station Temperature data by month:
+
+![station_temps_summary](https://user-images.githubusercontent.com/84881187/128605107-705c69f9-650f-4a9b-b2d1-2559871bb03d.PNG)
+
+
+![station_temps_list](https://user-images.githubusercontent.com/84881187/128606116-8d301991-bd0c-489a-9e40-eaa1627f3ac7.PNG)
+
+#
+
+Looking at our overall data, the weather in both June and December are  more-or-less similar. However, the lack of December data at 1517 counts to June's 1700 counts could be a limiting factor in giving us an accurate assessment of the differences in weather. There are many other variables we could analyze that would give us a more accurate picture as to whether opening a Ice Cream & Surf shop in Oahu would be sustabable during the months of June and December. Apart from the variables of Precipitation and weather pattterns around certain Weather Stations we described above, it would also be advisable to gather data on factors such as: tourism density, wave swell patterns, wind conditions, population density of similar businesses, and sun presence. These are all different variables that could affect prospective customers patronage to the business, and how appealing the business' products are. I personally would definitely not want to go surfing on a dark day, with limited wave swells and breaks, and unfavorable wind directions. 
+
+To briefly summarize our analysis, though temperatures recorded in December seem to vary more than those of June, December could still provide appropriate weather conditions for both surfing and demand in ice cream. There are many other variables we would need to consider to determine if opening an Ice Cream and Surf shop in Oahu would be sustainable.
